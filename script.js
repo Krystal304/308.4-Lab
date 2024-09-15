@@ -57,30 +57,30 @@
             // Working with other data
             // variable
     
-            // let string ='Index,Mass (kg),Spring 1 (m),Spring 2 (m)\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232'
-            //     let cell = '';
-            //     let row = '';
-            //             for(let i in string){
-            //                 switch(string[i]){
-            //                 case ',':
-            //             row = row + cell + ' ';
-            //              cell = ''
-            //              break;
-            //             case '\n':
-            //                 row = row + cell;
-            //                  cell = '';
-            //             console.log(row)
-            //              row = ''
-            //             break;
-            //         default:
-            //             cell += string[i];
-            //             break;
-            //     }
-            //             if (i == string.length - 1){
-            //                  row += cell
-            //             console.log(row)
-            //     }
-            // }
+        //     let string ='Index,Mass (kg),Spring 1 (m),Spring 2 (m)\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232'
+        //         let cell = '';
+        //         let row = '';
+        //                 for(let i in string){
+        //                     switch(string[i]){
+        //                     case ',':
+        //                 row = row + cell + ' ';
+        //                  cell = ''
+        //                  break;
+        //                 case '\n':
+        //                     row = row + cell;
+        //                      cell = '';
+        //                 console.log(row)
+        //                  row = ''
+        //                 break;
+        //             default:
+        //                 cell += string[i];
+        //                 break;
+        //         }
+        //                 if (i == string.length - 1){
+        //                      row += cell
+        //                 console.log(row)
+        //         }
+        //     }
             
 
                     // Part 2: Expanding Functionality
@@ -102,11 +102,11 @@
             // ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry
             //  Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26
 
-            // let string = 'ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26'
+        //     let string = 'ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26'
 
-            // let cell = ' ';
+        //     let cell = ' ';
 
-            // let row = ' ';
+        //     let row = ' ';
 
         //     let cell = '';
         // let row = '';
@@ -181,7 +181,7 @@
 
         //         });
                         
-                console.log (array);
+        //         console.log (array);
 
 
                 
@@ -212,8 +212,58 @@
         //         jobs.push(new_Jobs);
 
         //         console.log(jobs);
+
+        // Part 5: Full Circle
+        // As a final task, transform the final set of data back into CSV format.
+        // There are a number of ways to do this; be creative!
+        // Once complete, be sure to submit your work according to the submission instructions
+        //  at the beginning of this document.
                 
+        let names = [
+                { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+                { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+                { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+                { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+                { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+        ];
+                let csv = names.map(function(d){
+                        return JSON.stringify(Object.values(d));
+
+                })
+                .join(`\n`)
+                .replace(/(^\[)|(\]$)/mg, '');
+
+                console.log(csv)
+                
+
+
+                // let headers = Object.keys(names[0]);
+
+                // let newArray = [headers.join(`,`) ];
+
+                // for (let i = 0; i < names.length; i++) {
+
+                //         let row = [];
+
+                // for (let h = 0; h < headers.length; h++){
+                //         row.push(names[i][headers[h]]);
+                // }
+                // newArray.push(row.join(`,`));
+                        
+                // }
+
+                // let newString = names.join(`\n`);
+
+                // console.log(newString);
+
+
+
+
+
+
+
                
+        
 
               
 
