@@ -146,40 +146,101 @@
                 // Since the heading for each column will be stored in the object keys, you do not need
                 // to create an object for the heading row itself.
 
-                let data = [
-                ["ID", "Name", "Occupation", "Age"],
-                ["42", "Bruce", "Knight", "41"],
-                ["57", "Bob", "Fry Cook", "19"],
-                ["63", "Blaine", "Quiz Master", "58"],
-                ["98", "Bill", "Doctor’s Assistant", "26"]
-        ];
+        //         let data = [
+        //         ["ID", "Name", "Occupation", "Age"],
+        //         ["42", "Bruce", "Knight", "41"],
+        //         ["57", "Bob", "Fry Cook", "19"],
+        //         ["63", "Blaine", "Quiz Master", "58"],
+        //         ["98", "Bill", "Doctor’s Assistant", "26"]
+        // ];
 
 
-                // heading
-                let heading = data[0].map(h => h.toLowerCase());
+        //         // heading
+        //         let heading = [];
+        //         for (let i=0; i < data[0].length; i++) {
+        //         heading[i] = data [0][i].toLowerCase();
+        // }     
+        
+
               
-                let rows = data.slice(1);
+        //         let rows = data.slice(1);
 
-                let array = []
+         
 
-                rows.forEach(row=> {
-                        let obj = {};
+        //         // empty array for storage
+        //         let array = [];
 
-                heading.forEach((name, index, ) => {
-                        obj[name] = row[index] 
-                
- 
-                        });
-                        array.push(obj);
+        //         rows.forEach((row, index) => {
+        //                 let obj = {};
 
-                });
+        //         heading.forEach((name, i) => {
+        //                 obj[name] = row[i]; 
+        //         });
+                        
+        //         array[index]=(obj);
+
+        //         });
+                        
                 console.log (array);
 
 
                 
+                // Part 4: Sorting and Manipulating Data
+                // Using array methods, accomplish the following tasks, in order upon the result of Part 3:
+                // Remove the last element from the sorted array.
+                // Insert the following object at index 1:
+                // {id: "48", name: "Barry", occupation: "Runner", age: "25" }
+                // Add the following object to the end of the array:
+                // { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+                
+
+        //         let jobs = [
+                        
+        //                 { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+        //                 { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+        //                 { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+        //                 { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }
+                
+        // ]
+
+        //         jobs.pop();
+
+        //         let newJobs = { id: `48`, name: `Barry`, occupation: `Runner`, age: `25` };
+        //         jobs.splice(1, 0, newJobs);
+
+        //         let new_Jobs = { id: "7", name: "Bilbo", occupation: "None", age: "111" };
+        //         jobs.push(new_Jobs);
+
+        //         console.log(jobs);
+                
+               
+
+              
+
+      
+
+       
+
+       
+
+       
+
+              
+
+               
+
+               
 
 
+                
 
+                
+
+
+               
+
+
+               
                 
 
 
